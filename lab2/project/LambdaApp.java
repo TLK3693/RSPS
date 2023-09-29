@@ -84,7 +84,7 @@ public class LambdaApp {
             public void Info(List<Author> authors) {
                 for (int index = 0;  index < authors.size(); index++) {
                     System.out.println("---Информация об авторе---\n");
-                    System.out.println("Фамлия = " + authors.get(index).getLastName() + "\n");
+                    System.out.println("Фамилия = " + authors.get(index).getLastName() + "\n");
                     System.out.println("Имя = " + authors.get(index).getFirstName() + "\n");
                     System.out.println("Отчество = " + authors.get(index).getSurname() + "\n");
                     System.out.println("Номер телефона = " + authors.get(index).getTelephone() + "\n");
@@ -118,7 +118,7 @@ public class LambdaApp {
         // }
 
 
-
+        //<--->
 
         Book MasteraAndMargarita = new Book(
             "Мастер и Маргарита",
@@ -232,8 +232,9 @@ public class LambdaApp {
             }
         };
 
-        System.out.print("----Поиск по жанру----\n ");
-        operation.GenreSearch(books, "Повесть");
+        String user_genre_input = "Повесть";
+        System.out.print("----Поиск по жанру----\n" + user_genre_input + '\n');
+        operation.GenreSearch(books, user_genre_input);
 
         // try (Scanner sc = new Scanner(System.in)) {
         //     if(sc.hasNextLine()) {
