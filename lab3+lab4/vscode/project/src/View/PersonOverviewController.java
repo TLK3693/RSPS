@@ -27,6 +27,8 @@ public class PersonOverviewController<Hellofx> {
     private Label raitingLabel;
     @FXML
     private Label emailLabel;
+    @FXML
+    private Label popularBookLabel;
 
 
     // Ссылка на главное приложение.
@@ -35,15 +37,15 @@ public class PersonOverviewController<Hellofx> {
     private ObservableList<Author> authorData = FXCollections.observableArrayList();
     public ObservableList<Author> SetObservableListOfAuthor() {
 		// В качестве образца добавляем некоторые данные
-		authorData.add(new Author("Hans", "Muster"));
-		authorData.add(new Author("Ruth", "Mueller"));
-		authorData.add(new Author("Heinz", "Kurz"));
-		authorData.add(new Author("Cornelia", "Meier"));
-		authorData.add(new Author("Werner", "Meyer"));
-		authorData.add(new Author("Lydia", "Kunz"));
-		authorData.add(new Author("Anna", "Best"));
-		authorData.add(new Author("Stefan", "Meier"));
-		authorData.add(new Author("Martin", "Mueller"));
+		authorData.add(new Author("Михаил", "Булгаков"));
+		authorData.add(new Author("Николай", "Гоголь"));
+		authorData.add(new Author("Александр", "Дюма"));
+		authorData.add(new Author("Александр", "Пушкин"));
+		authorData.add(new Author("Василий ", "Жуковский"));
+		authorData.add(new Author("Александр", "Грибоедов"));
+		authorData.add(new Author("Михаил", "Лермонтов"));
+		authorData.add(new Author("Иван", "Тургенев"));
+		authorData.add(new Author("Александр", "Островский"));
         return authorData;
 	}
 

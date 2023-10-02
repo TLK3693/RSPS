@@ -24,6 +24,7 @@ public class Author {
 	private final StringProperty telephone; // street -> telephone
 	private final DoubleProperty raiting; // postalCode -> raiting
 	private final StringProperty email; // city -> email
+	private final StringProperty popularBook;
 
 	//private final ObjectProperty<LocalDate> birthday;
 
@@ -49,6 +50,7 @@ public class Author {
 		this.telephone = new SimpleStringProperty("+7");
 		this.raiting = new SimpleDoubleProperty(0.0);
 		this.email = new SimpleStringProperty("@mail.ru");
+		this.popularBook = new SimpleStringProperty("Book");
 		//this.birthday = new SimpleObjectProperty<LocalDate>(LocalDate.of(1999, 2, 21));
 	}
 
@@ -128,6 +130,20 @@ public class Author {
 	public StringProperty cityProperty() {
 		return email;
 	}
+	//
+
+	public String getPopularBook() {
+		return popularBook.get();
+	}
+
+	public void setPopularBook(String popularBook) {
+		this.popularBook.set(popularBook);
+	}
+
+	public StringProperty PopularBookProperty() {
+		return popularBook;
+	}
+
     //
 
 	// public LocalDate getBirthday() {
