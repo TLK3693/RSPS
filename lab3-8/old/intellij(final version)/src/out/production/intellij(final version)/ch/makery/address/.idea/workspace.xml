@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6bc41414-a602-445f-8929-5d7053646c2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/123.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/AddressApp/build.fxbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/build.fxbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/src/application.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../eclipse/Main/src/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../vscode/project/src/Hellofx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../vscode/project/src/Hellofx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../vscode/project/src/Model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../vscode/project/src/Model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../vscode/project/src/View/PersonOverview.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../vscode/project/src/View/PersonOverview.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../../../vscode/project/src/View/PersonOverviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../../../vscode/project/src/View/PersonOverviewController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2WfYpnpoxd7JnTulf15DzklSDZa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/TRAN TIEN THANH/Favorites/Links/inivers/2.3/Разработка и сопровождение программных систем/лабораторные/lab3+lab4/intellij(final version)/addressapp-jfx8u40-part-7/AddressApp-Part-7/src/ch/makery/address",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bc41414-a602-445f-8929-5d7053646c2f" name="Changes" comment="" />
+      <created>1697125286955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697125286955</updated>
+      <workItem from="1697125287977" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
