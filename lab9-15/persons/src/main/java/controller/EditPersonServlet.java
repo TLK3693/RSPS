@@ -1,0 +1,100 @@
+package controller;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLDataException;
+import java.util.List;
+import dao.ConnectionProperty;
+import dao.PersonDbDAO;
+import dao.RoleDbDAO;
+import domain.Author;
+import domain.Book;
+
+@WebServlet("/editperson")
+public class EditPersonServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	ConnectionProperty prop;
+
+	public EditPersonServlet()
+			throws FileNotFoundException, IOException {
+		super();
+		prop = new ConnectionProperty();
+	}
+	protected void doGet(HttpServletRequest request,
+			HttpServletResponse response)
+					throws ServletException, IOException {
+		response.setContentType("text/html");
+		String userPath;
+		List<Book> roles;
+		List<Author> persons = null;
+		Author editperson = null;
+		RoleDbDAO daoRole = new RoleDbDAO();
+		PersonDbDAO dao = new PersonDbDAO();
+		
+		try {
+			roles = daoRole.findAll();
+			request.setAttribute("roles", roles);
+		} catch (SQLDataException e) {
+			e.printStackTrace();
+		}
+		try {
+			persons = dao.findAll();
+			roles = daoRole.findAll();
+			for (Author person: persons) {
+				person.setBook(daoRole.FindById(person.getIdBook(), roles));
+			}
+		}catch (SQLDataException e) {
+			e.printStackTrace();
+		}
+		String strId = request.getParameter("id");
+		Long id = null; // id редактируемого сотрудника
+		if(strId != null) {
+			id = Long.parseLong(strId);
+		}
+		try {
+			editperson = dao.findById(id);
+		} catch (SQLDataException e) {
+			e.printStackTrace();
+		}
+		request.setAttribute("personEdit", editperson);
+		request.setAttribute("persons", persons);
+		userPath = request.getServletPath();
+		if ("/editperson".equals(userPath)) {
+			request.getRequestDispatcher("/views/editperson.jsp").forward(request, response);
+		}
+	}
+	protected void doPost(HttpServletRequest request,
+			HttpServletResponse response)
+					throws ServletException, IOException {
+		PersonDbDAO dao = new PersonDbDAO();
+		String strId = request.getParameter("id");
+		Long id = null;
+		if(strId != null) {
+			id = Long.parseLong(strId);
+			
+		}
+		String firstName = request.getParameter("firstname");
+		String lastName = request.getParameter("lastname");
+		String middleName = request.getParameter("middleName");
+		String raiting = request.getParameter("raiting");
+		String email = request.getParameter("email");
+		String phone = request.getParameter("phone");
+		String role = request.getParameter("role");
+		int index1 = role.indexOf('=');
+		int index2 = role.indexOf(",");
+		
+		String r1 = role.substring(index1+1, index2);
+		Long idRole = Long.parseLong(r1.trim());
+		Author editPerson = new Author(idRole, firstName, lastName,middleName,Integer.valueOf(raiting),phone, email, id);
+		try {
+			dao.update(editPerson);
+		} catch (SQLDataException e) {
+			e.printStackTrace();
+		}
+		response.sendRedirect("/persons/person");
+	}
+}

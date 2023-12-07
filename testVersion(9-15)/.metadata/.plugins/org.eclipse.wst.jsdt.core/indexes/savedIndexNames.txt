@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\TRAN TIEN THANH\Desktop\lab9Copy\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1100159642.index
+4079812647.index
+3741497150.index
+36232912.index
+1486561613.index
+2694073596.index
+1684315647.index
